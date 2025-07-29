@@ -414,4 +414,7 @@ async def get_recommendations(ticker: str, recommendation_type: str, months_back
 if __name__ == "__main__":
     # Initialize and run the server
     print("Starting Yahoo Finance MCP server...")
-    yfinance_server.run(transport="sse")
+    yfinance_server.run(
+        transport="http",
+        log_level="debug"
+    )
