@@ -415,6 +415,5 @@ if __name__ == "__main__":
     # Initialize and run the server
     print("Starting Yahoo Finance MCP server...")
     yfinance_server.run(
-        transport="http",
-        log_level="debug"
+        transport="http"
     )
